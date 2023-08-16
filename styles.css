@@ -1,0 +1,69 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("images/Background img.jpg");
+    background-size: 106vw 100vh;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .board {
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(142, 242, 115), rgb(246, 250, 117));
+    height: 500px;
+    width: 500px;
+    display: grid;
+    /* Learn:css convert div into grid (18x18) */
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 20px 20px 10px rgb(41, 128, 15);
+  }
+  
+  .head {
+    background-color: rgb(119, 13, 231);
+    border-radius: 10px;
+  }
+  
+  .snakeBody {
+    background-color: rgb(161, 121, 230);
+    border-radius: 13px;
+  }
+  
+  .food {
+    background-color: rgb(255, 1, 1);
+    border-radius: 10px;
+  }
+  
+  #scoreBoard {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50px;
+    right: 5vw;
+    color: black;
+    border: 4px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+  
+  .score0 {
+    font-size: 5vh;
+    padding: 1vh;
+  }
+  
+  .score1 {
+    font-size: 3vh;
+  }
+  
+  .score2 {
+    font-size: 3vh;
+  }
+  
